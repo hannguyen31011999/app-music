@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Music Play</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4"></div>
+            <div class="col-12 col-lg-4 play-music">
+                <header id="header">
+                    <div class="header__title">
+                        <h4>Now playing:</h4>
+                        <h3 class="header__song" id="header__song">Nàng Thơ</h3>
+                    </div>
+                    <figure class="header__image">
+                        <img id="header__image" src="./css/img/nhung-gi-anh-noi.jpg" alt="">
+                    </figure>
+                    <div class="header__control">
+                        <div class="btn btn-repeat">
+                            <i class="fas fa-redo" id="repeat-song"></i>
+                        </div>
+                        <div class="btn btn-prev">
+                            <i class="fas fa-step-backward" id="pre-song"></i>
+                        </div>
+                        <div class="btn btn-toggle-play" id="btn-toggle-play">
+                            <i class="fas fa-pause icon-pause" id="icon-pause"></i>
+                            <i class="fas fa-play icon-play" id="icon-play"></i>
+                        </div>
+                        <div class="btn btn-next">
+                            <i class="fas fa-step-forward" id="next-song"></i>
+                        </div>
+                        <div class="btn btn-random">
+                            <i class="fas fa-random" id="random-song"></i>
+                        </div>
+                    </div>
+                    <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="300">
+                    <audio id="audio">
+                    </audio>
+                </header>
+                <div class="playlist" id="playlist">
+                </div>
+            </div>
+            <div class="col-12 col-lg-4"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
